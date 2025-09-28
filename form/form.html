@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form with Bootstrap</title>
+    <title>Form</title>
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <style>
       .form-container {
         max-width: 500px;
@@ -21,19 +17,24 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: #fff;
       }
+
+      .center {
+        text-align: center;
+      }
     </style>
   </head>
   <body class="bg-light">
     <div class="container">
       <div class="form-container">
-        <h4 class="text-center mb-4">Form Submission to Google Sheet</h4>
-        <form id="submit-to-google-sheet">
+        <h4 class="text-center mb-4">Form Submission</h4>
+        <p class="center">Kindly put every information about your child at the message box</p>
+        <form action="https://sheetdb.io/api/v1/ubcjiuqhevfpq" method="post">
           <div class="form-group">
             <label for="name">Name:</label>
             <input
               class="form-control"
               type="text"
-              name="name"
+              name="data[NAME]"
               id="name"
               placeholder="Name"
               required
@@ -44,7 +45,7 @@
             <input
               class="form-control"
               type="email"
-              name="email"
+              name="data[EMAIL]"
               id="email"
               placeholder="Email"
               required
@@ -55,7 +56,7 @@
             <input
               class="form-control"
               type="text"
-              name="contact_number"
+              name="data[CONTACT_NUMBER]"
               id="contact_number"
               placeholder="Contact Number"
               required
@@ -64,7 +65,7 @@
 
           <div class="form-group">
             <label for="loc">Gender:</label>
-            <select class="form-control" name="gender" id="gender" required>
+            <select class="form-control" name="data[GENDER]" id="gender" required>
               <option value="" disabled selected hidden>Choose...</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -74,7 +75,7 @@
             <label for="loc">Message:</label>
             <textarea
               class="form-control"
-              name="message"
+              name="data[MESSAGE]"
               id="message"
               placeholder="Message"
               required
@@ -98,36 +99,5 @@
         </form>
       </div>
     </div>
-
-    <script>
-      const scriptURL =                       
-      "https://script.google.com/macros/s/AKfycbxyv4ijv7azb3Me-hWfx3LJM9CHdPaNhCSzFHZL7SngfXI67LnJR7vhK2bKgHH43W8IyA/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        var formData = new FormData(form);
-        var ex = document.getElementById("ex").checked;
-        var age = document.getElementById("age").checked;
-
-        if (age) {
-          formData.append("age", "Yes");
-        } else {
-          formData.append("age", "No");
-        }
-        if (ex) {
-          formData.append("ex", "Yes");
-        } else {
-          formData.append("ex", "No");
-        }
-
-        fetch(scriptURL, { method: "POST", body: formData })
-          .then((response) => {
-            swal("Done", "Submitted Successfully.", "success");
-          })
-          .catch((error) => {
-            swal("Error", "Something went wrong. please try again!", "error");
-          });
-      });
-    </script>
   </body>
 </html>
