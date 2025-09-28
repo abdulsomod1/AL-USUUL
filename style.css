@@ -355,8 +355,38 @@
             color: white;
         }
 
-        @media (max-width: 480px) {
-        .contact-u {
-            display: grid;
+
+
+        .icon {
+            margin-right: 50px;
+            display: flex;
         }
+
+        .margin {
+            margin-left: 7%;
+            margin-top: 5%;
+            display: flex;
         }
+
+        .icon-2 {
+            margin-left: 17%;
+        }
+
+        .fa-brands {
+            margin-top: 7%;
+        }
+
+        .fa-solid {
+            margin-top: 7%;
+        }
+
+        .fa-brands {
+            margin-top: 7%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
