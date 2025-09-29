@@ -7,7 +7,7 @@ form.addEventListener("submit", e => {
   }).then(
     response => response.json()
   ).then((html) => {
-    alert('✅ submitted || Thank you for the Application ' + document.getElementById('usuul_name').value)
+    alert('✅ submitted || Thank you for the Application ' + document.getElementById('usuul_name').value + '🤝')
     window.location.href = '';
     location.reload();
   })
