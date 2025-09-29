@@ -1,6 +1,3 @@
-body {
-  background-color: blue;
-}
 .form-container {
         max-width: 500px;
         margin: auto;
@@ -8,8 +5,93 @@ body {
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: #fff;
+        color: blue;
       }
 
       .center {
         text-align: center;
       }
+
+      /* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+h1 {
+  font-size: 9vmin;
+  color: blue;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+  text-align: center;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "W"; }
+  2.2791%, 25.0698% { content: "WE"; }
+  3.4186%, 23.9302% { content: "WEL"; }
+  4.5581%, 22.7907% { content: "WELC"; }
+  5.6977%, 21.6512% { content: "WELCO"; }
+  6.8372%, 20.5116% { content: "WELCOME "; }
+
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  30% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+  
