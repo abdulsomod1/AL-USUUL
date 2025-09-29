@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  animation: bgcolor infinite 30s;
+}
+
+@keyframes bgcolor {
+  0% {
+    background: #3742fa;
+  }
+    20% {
+    background: #130f40;
+  }
+    40% {
+    background: #7ed6df;
+  }
+    60% {
+    background: #22a6b3;
+  }
+    80% {
+    background: #40407a;
+  }
+    100% {
+    background: #2c2c54;
+  }
+    120% {
+    background: #b33939;
+  }
+ 
+}
+
+/* .navbar-brand{
+    font-size: x-large;
+    
+} */
+
+.text-center {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
+body {
+    text-shadow: darkgray;
+}
+
+.footer{
+    bottom: 0;
+    
+}
+
+.table{
+    color: gray;
+    
+}
+.logo {
+    width: 10%;
+    margin-left: 10px;
+    height: 65px;
+}
+
