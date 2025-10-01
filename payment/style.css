@@ -57,3 +57,22 @@ body {
     height: 65px;
 }
 
+.card {
+  margin-right: 22%;
+  margin-left: 3%;
+}
+
+.reception {
+  margin-left: 3%;
+  margin-right: 22%;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+h5 {
+  text-align: center;
+ color: black;
+}

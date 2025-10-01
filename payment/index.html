@@ -1,30 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Details</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<!-- Font -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="card-body" id="ent">
+    <div class="card text-center" id="choose" style="margin-top: 20%;">
+  <div class="card-header">
+  </div>
+  <div class="card-body" id="ent">
             <h4 class="text-dark">Enter Class</h4>
                 <input type="text" list="Classes" id="junaid" style="width: 60%; height: 60%;">
                 <datalist id="Classes">Select:
-                    <option value="Junior Achievers 1-3"></option>
+                    <option value="Reception"></option>
+                    <option value="Nursery"></option>
+                    <option value="Grade"></option>
+                    <option value="Senior Achievers 1-3"></option>
                     <option value="Senior Achievers 1-3"></option>
                     </datalist>
                     <h3></h3>
                     <div>
-    <button  class="btn btn-secondary" onclick="enter()">Payment Details</button>
+    <button  class="btn btn-primary" onclick="enter()">Payment Details</button>
     </div>
 </div>
 </div>
 
-<!-- Payment Section -->
-<!-- <div class="bg-secondary" id="paysec"> -->
-<h1></h1>
-<div id="Junior Achievers 1-3" style="display: none; margin-top: 10%;">
+
+<div id="Reception" style="display: none; margin-top: 10%;" class="reception">
+    <h3>This Term Payments for Reception</h3>
+<table class="table table-secondary table-striped-columns"> 
+<h5 class="text-light">Reception</h5>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="h6">
+    <tr>
+      <th scope="row">1</th>
+      <td>Registration Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦10,000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>School Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦33,500</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Wears</td>
+      <td></td>
+      <td></td>
+      <td>₦48,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Notebooks</td>
+      <td></td>
+      <td></td>
+      <td>₦12,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Manaual</td>
+      <td></td>
+      <td></td>
+      <td>₦5,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <td>Exam</td>
+      <td></td>
+      <td></td>
+      <td>₦4,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">5</th>
+      <td>Maintenance</td>
+      <td></td>
+      <td></td>
+      <td>₦2,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">*</th>
+      <td class="h4">Total</td>
+      <td></td>
+      <td></td>
+      <td class="h4">₦114,500</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="Nursery" style="display: none; margin-top: 10%;" class="reception">
+    <h3>This Term Payments for Nursery</h3>
+<table class="table table-secondary table-striped-columns"> 
+<h5 class="text-light">Nursery</h5>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="h6">
+    <tr>
+      <th scope="row">1</th>
+      <td>Registration Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦10,000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>School Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦33,500</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Wears</td>
+      <td></td>
+      <td></td>
+      <td>₦48,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Notebooks</td>
+      <td></td>
+      <td></td>
+      <td>₦12,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Manaual</td>
+      <td></td>
+      <td></td>
+      <td>₦5,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <td>Exam</td>
+      <td></td>
+      <td></td>
+      <td>₦4,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">5</th>
+      <td>Maintenance</td>
+      <td></td>
+      <td></td>
+      <td>₦2,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">*</th>
+      <td class="h4">Total</td>
+      <td></td>
+      <td></td>
+      <td class="h4">₦114,500</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<div id="Grade" style="display: none; margin-top: 10%;" class="reception">
+    <h3>This Term Payments for Grades Section</h3>
+<table class="table table-secondary table-striped-columns"> 
+<h5 class="text-light">Grade</h5>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="h6">
+    <tr>
+      <th scope="row">1</th>
+      <td>Registration Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦10,000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>School Fee</td>
+      <td></td>
+      <td></td>
+      <td>₦33,500</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Wears</td>
+      <td></td>
+      <td></td>
+      <td>₦48,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Notebooks</td>
+      <td></td>
+      <td></td>
+      <td>₦12,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Manaual</td>
+      <td></td>
+      <td></td>
+      <td>₦5,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <td>Exam</td>
+      <td></td>
+      <td></td>
+      <td>₦4,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">5</th>
+      <td>Maintenance</td>
+      <td></td>
+      <td></td>
+      <td>₦2,000</td>
+    </tr>
+
+    <tr>
+      <th scope="row">*</th>
+      <td class="h4">Total</td>
+      <td></td>
+      <td></td>
+      <td class="h4">₦114,500</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div id="Junior Achievers 1-3" style="display: none; margin-top: 10%;" class="reception">
+    <h3>This Term Payments for Junior Achievers (JSS 1-3)</h3>
 <table class="table table-secondary table-striped-columns"> 
 <h5 class="text-light">Junior Achievers (JSS 1-3)</h5>
   <thead>
@@ -103,7 +359,8 @@
 </table>
 </div>
 
-<div id="Senior Achievers 1-3" style="display: none; margin-top: 10%;">
+<div id="Senior Achievers 1-3" style="display: none; margin-top: 10%;" class="reception">
+    <h3>This Term Payments for Senior Achievers (JSS 1-3)</h3>
 <table class="table table-secondary table-striped-columns">
 <h5 class="text-light text-center"> Senior Achievers (SS 1-3)</h5>
   <thead>
@@ -179,15 +436,8 @@
 <!-- </div> -->
 <div class="bg-light"></div>
 
-<button id="home2"  class="btn btn-secondary text-light" onclick="home2()" style="display: none;">Previous Page</button>
-
-
-<div id="home" onclick="home()" style="display: none;">
-<h5 class=" bg-light text-center p-3" style="bottom: 0%;"><a href="">Go To Home Page</a></h5>
-</div>
-
+<button id="backButton">Go Back</button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-
+<script src="app.js"></script>
 </body>
 </html>
