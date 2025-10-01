@@ -9,6 +9,7 @@ var choose_class = document.getElementById("choose");
 var entr = document.getElementById("entr");
 
 
+
 function enter() {
     var reception = document.getElementById("Reception");
     var nursery = document.getElementById("Nursery");
@@ -17,6 +18,7 @@ function enter() {
     var seniorachiever = document.getElementById("Senior Achievers 1-3");
     var junaid = document.getElementById("junaid");
     var choose_class = document.getElementById("choose");
+    var home2 = document.getElementById("home2");
 
     if(junaid.value == 'Reception') {
         reception.style.display = "block";
@@ -25,6 +27,7 @@ function enter() {
         choose_class.style.display = "none";
         juniorachiever.style.display = "none";
         seniorachiever.style.display = "none";
+        home2.style.display = "block";
     }
     else if(junaid.value == 'Nursery'){
         reception.style.display = "none";
@@ -33,6 +36,7 @@ function enter() {
         choose_class.style.display = "none";
         juniorachiever.style.display = "none";
         seniorachiever.style.display = "none";
+        home2.style.display = "block";
     }
     else if(junaid.value == 'Grade') {
         reception.style.display = "none";
@@ -41,6 +45,7 @@ function enter() {
         choose_class.style.display = "none";
         juniorachiever.style.display = "none";
         seniorachiever.style.display = "none";
+        home2.style.display = "block";
     }
     else if(junaid.value == 'Junior Achievers 1-3') {
         reception.style.display = "none";
@@ -49,6 +54,7 @@ function enter() {
         choose_class.style.display = "none";
         juniorachiever.style.display = "block";
         seniorachiever.style.display = "none";
+        home2.style.display = "block";
     }
     else if(junaid.value == 'Senior Achievers 1-3') {
         reception.style.display = "none";
@@ -57,6 +63,7 @@ function enter() {
         choose_class.style.display = "none";
         juniorachiever.style.display = "none";
         seniorachiever.style.display = "block";
+        home2.style.display = "block";
     }
    else{
     
@@ -65,7 +72,20 @@ function enter() {
 
 }
 
-    document.getElementById('backButton').addEventListener('click', function() {
-        window.history.back("ent");
-    });
+function home2() {
+    var reception = document.getElementById("Reception");
+    var nursery = document.getElementById("Nursery");
+    var choose_class = document.getElementById("choose");
+    var grade = document.getElementById("Grade");
+    var juniorachiever = document.getElementById("Junior Achievers 1-3");
+    var seniorachiever = document.getElementById("Senior Achievers 1-3");
+    var home2 = document.getElementById("home2");
     
+    choose_class.style.display = "block";
+    reception.style.display = "none";
+    juniorachiever.style.display = "none";
+    seniorachiever.style.display = "none";
+    nursery.style.display = "none";
+    grade.style.display ="none";
+    home2.style.display = "none";
+}
