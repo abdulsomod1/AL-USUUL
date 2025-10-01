@@ -58,13 +58,16 @@ body {
 }
 
 .card {
-  margin-right: 22%;
-  margin-left: 3%;
+  margin-right: 4%;
+    margin-left: 3%;
+    margin-top: 75%;
 }
 
 .reception {
   margin-left: 3%;
-  margin-right: 22%;
+  margin-right: 3%;
+  margin-top: 42%;
+  display: none;
 }
 
 h3 {

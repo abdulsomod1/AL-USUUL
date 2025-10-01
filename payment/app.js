@@ -66,6 +66,6 @@ function enter() {
 }
 
     document.getElementById('backButton').addEventListener('click', function() {
-        window.history.back();
+        window.history.ent();
     });
     
