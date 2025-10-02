@@ -10,12 +10,27 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #0a0a0a;
             color: #ffffff;
             line-height: 1.6;
         }
 
         /* Floating Navbar */
+        .navbar {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(26, 26, 26, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            padding: 17px 30px;
+            border: 1px solid #333;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 85%;
+        }
+
+        @media (max-width: 768px) {
         .navbar {
             position: fixed;
             top: 20px;
@@ -30,6 +45,7 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             width: 75%;
         }
+    }
 
         .nav-container {
             display: flex;
@@ -142,9 +158,18 @@
             cursor: pointer;
         }
 
+        
+        .padding {
+          padding-top: 10%;
+          padding-bottom: 15%;
+        }
+
+        @media (max-width: 768px) {
         .padding {
           padding-top: 25%;
           padding-bottom: 15%;
+        }
+  
         }
 
         /* Section Styling */
@@ -157,6 +182,27 @@
             position: relative;
         }
 
+        @media (max-width: 480px) {        
+            .section {
+            min-height: 41vh;
+            width: 103%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: white;
+            color: blue;
+        }
+            .color1 {
+                color: white;
+            }
+
+            #color1 {
+                color: white;
+            }
+        }
+
+
         .section h1 {
             font-size: 6rem;
             font-weight: 900;
@@ -166,15 +212,33 @@
             margin-bottom: 20px;
         }
 
+         @media (max-width: 480px) {
+            .section-info {
+            font-size: 40px;
+            color: #999;
+            font-style: italic;
+            text-align: center;
+            max-width: 600px;
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+
+    }
+
+        
+@media (max-width: 480px) {
         .section-info {
             font-size: 1.1rem;
-            color: #999;
             font-style: italic;
             text-align: center;
             max-width: 600px;
             margin: 0 auto;
             padding: 0 20px;
+            color: blue;
+            font-weight: 600;
         }
+
+    }
 
         .list {
           text-align: center;
@@ -182,24 +246,34 @@
         }
 
         /* Individual Section Colors */
-        #home {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        #school-history {
+            background: white;
         }
 
         #about {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            background: blue;
         }
 
         #services {
-            background: linear-gradient(135deg, #0a0a0a 0%, #2a2a2a 100%);
+            background: white;
         }
 
         #portfolio {
-            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            background: blue;
         }
 
         #contact {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            background: blue;
+        }
+
+        #footer {
+            background: white;
+            width: 103%;
+            margin-bottom: 3%;
+        }
+
+        #footer-c {
+            background: blue;
         }
 
         /* Footer */
@@ -235,7 +309,7 @@
 
         .footer-section p,
         .footer-section a {
-            color: #999;
+            color: white;
             text-decoration: none;
             margin-bottom: 8px;
             display: block;
@@ -250,8 +324,8 @@
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid #333;
-            color: #666;
+            border-top: 1px solid white;
+            color: white;
             font-size: 0.85rem;
         }
 
@@ -262,6 +336,7 @@
                 padding: 10px 20px;
                 width: calc(100% - 30px);
                 max-width: 500px;
+                background-color: blue;
             }
 
             .nav-container {
@@ -279,7 +354,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: rgba(26, 26, 26, 0.95);
+                background: blue;
                 flex-direction: column;
                 padding: 20px;
                 border-radius: 15px;
@@ -355,6 +430,7 @@
         .contact-u {
             display: flex;
             color: white;
+            font-weight: 800;
         }
 
 
@@ -365,7 +441,7 @@
         }
 
         .margin {
-            margin-left: 7%;
+            margin-left: 5%;
             margin-top: 5%;
             display: flex;
         }
