@@ -129,12 +129,12 @@
 
         .login-btn {
             color: #e0e0e0;
-            border: 1px solid #333;
+            border: 2px solid black;
         }
 
         .login-btn:hover {
             color: #ffffff;
-            border-color: #555;
+            border-color: white;
         }
 
         .signup-btn {
@@ -235,8 +235,8 @@
             font-size: 25px;
             font-style: italic;
             text-align: center;
-            margin-right: 3%;
-            margin-left: 4%;
+            margin-right: 5%;
+            margin-left: 5%;
         }
 
 
