@@ -65,6 +65,7 @@
             font-weight: 800;
             color: #ffffff;
             text-decoration: none;
+            white-space: nowrap;
         }
 
         .nav-links {
@@ -80,6 +81,7 @@
             font-size: 0.95rem;
             transition: all 0.3s ease;
             position: relative;
+            white-space: nowrap;
         }
 
         .nav-links a:hover,
@@ -130,6 +132,7 @@
         .login-btn {
             color: #e0e0e0;
             border: 2px solid black;
+            white-space: nowrap;
         }
 
         .login-btn:hover {
@@ -237,6 +240,7 @@
             text-align: center;
             margin-right: 5%;
             margin-left: 5%;
+            font-weight: 500;
         }
 
 

@@ -10,21 +10,17 @@ body {
   }
     20% {
     background: #130f40;
-  }
+  } 
     40% {
-    background: #7ed6df;
+    background: #3742fa;
   }
     60% {
-    background: #22a6b3;
-  }
-    80% {
-    background: #40407a;
+    background: #130f40;
+  } 80% {
+    background: #3742fa;
   }
     100% {
-    background: #2c2c54;
-  }
-    120% {
-    background: #b33939;
+    background: #130f40;
   }
  
 }
